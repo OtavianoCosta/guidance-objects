@@ -7,3 +7,12 @@ class Conta():
         self.limite = limite
 
     pass
+
+    def extrato(self):
+        print("Saldo de {} do Titular {}".format(self.saldo, self.titular))
+
+    def deposita(self, valor):
+        self.saldo += valor
+
+    def saca(self, valor):
+        self.saldo -= valor
